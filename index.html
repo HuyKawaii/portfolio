@@ -6,23 +6,26 @@
 -->
 <html>
 	<head>
-		<title>Hyperspace by HTML5 UP</title>
+		<title>My portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
+		<div id="fullImageView">
+			<img id="fullImage"/>
+			<span id="closeButton" onclick="$('#fullImageView').closeFullView()">x</span>
+		</div>
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
 					<nav>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#contanct">Contanct</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -33,150 +36,129 @@
 
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Hyperspace</h1>
-							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+							<img class="myImage" src="images/Square.JPG"  alt="" data-position="center center" />
+							<div class="inner">
+							<h1>Trương Anh Huy's portfolio</h1>
+							<p> An aspiring game developer, newly graduated from Hanoi University of Science and Techonology (HUST) with
+							excellent degree. Eager to work in the industry, please consider <a href="https://www.topcv.vn/xem-cv/UgYGAAdTB1JdBQNQBAsHAQZVVQQDAlhUU1IGVge839">my resume</a> if you are looking for employment.
+						  Also, peruse my portfolio for more details on my skill and experiences. If you find me suitable for the job, or
+						need further information please <a href="#contanct">contact me</a>. </p>
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
+								<li><a href="#about" class="button scrolly">Learn more</a></li>
+								<li><a href="https://www.topcv.vn/xem-cv/UgYGAAdTB1JdBQNQBAsHAQZVVQQDAlhUU1IGVge839" class="button scrolly myButton">My resume</a></li>
 							</ul>
 						</div>
 					</section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
+				<!-- About -->
+					<section id="about" class="wrapper style2 fullscreen fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
+							<h1>About me</h1>
+							<p> I am Truong Anh Huy, a fresh graduate from Hanoi University of Science and Technology (HUST) with a CPA of 3.7. In my years
+								of studying, majoring in information technology, I have acquired a base for programming and high efficency in English. 
+							</p>
+							<p> Being a game developer is my dream job, this passion started in my first few years of college. Since then
+								I have done much self studies and created several personal projects which you can learn more about <a href="#portfolio">here</a> .
+							</p>
+							<p> I am totally confident in my ability to learn and my unwavering passion for the job
+								and eager for an opportunity to take on new challanges and contribute to the work.
+							</p>
 							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
+								<li><a href="#portfolio" class="button scrolly">Learn more</a></li>
 							</ul>
 						</div>
 					</section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+				<!-- Portfolio -->
+					<section id="portfolio" class="wrapper style1 spotlights">
+						
+						<section>
+							<a class="image" onclick="$('#fullImageView').fullView('images/game1.png')"><img src="images/game1.png"  alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>A 2D platformer project</h2>
+									<p>One of my first projects. A simple 2D platformer where I learn character movement, collision detection,
+										enemy behaviour, enviroment creation and some UI elements.
+									</p>
+									<ul class="actions">
+										<li><a href="https://github.com/HuyKawaii/My-First-Game" class="button scrolly">Github</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a class="image" onclick="$('#fullImageView').fullView('images/game2.png')"><img src="images/game2.png" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Link bomb</h2>
+									<p>A fun little 2D game. Where the player place bomb on the screen, close by bombs are linked together by fuse, when one of them detonate
+										,it burns all fuses connected to it and detonate other bombs. Player can only detonates bomb at their base(on the white area)
+										and enemies fall from the top and damage player base when they touch it. Here I learn more about game saving, and post processing.
+									</p>
+									<ul class="actions">
+										<li><a href="https://github.com/HuyKawaii/Bomb-link" class="button scrolly">Github</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a class="image" onclick="$('#fullImageView').fullView('images/game3.png')"><img src="images/game3.png" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Jeopardy maker</h2>
+									<p>Simulate the American TV show with Jeopardy, allow a game master to create lobby and let friends join online.
+										I make this project to learn more about UI elements in Unity and Netcode for GameObject to implement multiplayer games.  
+									</p>
+									<ul class="actions">
+										<li><a href="https://github.com/HuyKawaii/A-Jeopardy-Maker" class="button scrolly">Github</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a class="image" onclick="$('#fullImageView').fullView('images/game4.png')"><img src="images/game4.png" alt="" data-position="25% center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Outside</h2>
+									<p>A 3D multiplayer survival game with procedure map generation (each playthrough is a different map) including terrain
+										and resource generation, simple combat system, player animation, inventory system (with drag and drop UI), equipment system with a stat system,
+										crafting system, day-night cycle. The game use Netcode for GameObject of Unity to implement relay connection between players.
+									</p>
+									<ul class="actions">
+										<li><a href="https://github.com/HuyKawaii/Outside" class="button scrolly">Github</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Contanct -->
+					<section id="contanct" class="wrapper style2 fade-up">
 						<div class="inner">
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
+								
 								<section>
 									<ul class="contact">
 										<li>
 											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
+											<span>Alley 328, Nguyen Trai Road, <br />
+											Thanh Xuan district, Hanoi<br />
 											USA</span>
 										</li>
 										<li>
 											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
+											<a href="#">truonganhhuyki@gmail.com</a>
 										</li>
 										<li>
 											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
+											<span>0866604105</span>
 										</li>
 										<li>
 											<h3>Social</h3>
 											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+												<li><a href="https://github.com/HuyKawaii" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://www.linkedin.com/in/huy-trương-anh-243b09328/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 											</ul>
 										</li>
 									</ul>
@@ -188,7 +170,7 @@
 			</div>
 
 		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
+			<footer id="footer" class="wrapper style2-alt">
 				<div class="inner">
 					<ul class="menu">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>

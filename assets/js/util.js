@@ -584,4 +584,13 @@
 
 	};
 
+	$.fn.fullView = function(imgLink){
+		$(this).css('display', 'block');
+		$(this).find('#fullImage').attr('src', imgLink);
+	}
+
+	$.fn.closeFullView = function(){
+		$(this).css('display', 'none');
+	}
 })(jQuery);
+
